@@ -1,0 +1,3493 @@
+{
+  "creator": "Next Generation Place and Route (Version nextpnr-0.10-100-gfb95bb8e)",
+  "modules": {
+    "top": {
+      "settings": {
+        "route": "00000000000000000000000000000001",
+        "router/tmg_ripup": "0 ",
+        "router1/useEstimate": "1 ",
+        "router1/fullCleanupReroute": "1 ",
+        "router1/cleanupReroute": "1 ",
+        "router1/maxIterCnt": "200",
+        "place": "00000000000000000000000000000001",
+        "placer1/startTemp": "1.000000",
+        "placer1/minBelsForGridPick": "64",
+        "placer1/netShareWeight": "0.000000",
+        "placer1/constraintWeight": "10.000000",
+        "placerHeap/cellPlacementTimeout": "8",
+        "placerHeap/noCtrlSet": "0 ",
+        "placerHeap/netShareWeight": "0.000000",
+        "placerHeap/parallelRefine": "0 ",
+        "pack": "00000000000000000000000000000001",
+        "synth": "00000000000000000000000000000001",
+        "placerHeap/timingWeight": "10 ",
+        "placerHeap/criticalityExponent": "2",
+        "placerHeap/beta": "0.900000",
+        "placerHeap/alpha": "0.100000",
+        "seed": "0011000101000001010110010010011001010011010110001001011110010011",
+        "arch.type": " ",
+        "arch.name": "ARCHNAME",
+        "router": "default",
+        "placer": "heap",
+        "auto_freq": "00000000000000000000000000000000",
+        "timing_driven": "00000000000000000000000000000001",
+        "target_freq": "27000000.000000",
+        "cst.filename": "/home/prima/GR8GG/tangnano9k.cst",
+        "packer.partno": "GW1NR-LV9QN88PC6/I5",
+        "packer.chipdb": "GW1N-9C",
+        "packer.arch": "himbaechel/gowin"
+      },
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "/home/prima/GR8GG/counter.v:1.1-20.10"
+      },
+      "ports": {
+        "led": {
+          "direction": "output",
+          "bits": [ 7920, 7918, 7915, 7912, 7909, 7906 ]
+        },
+        "clk": {
+          "direction": "input",
+          "bits": [ 7709 ]
+        }
+      },
+      "cells": {
+        "clockCounter_DFFR_Q_14_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X2Y15/LUT1"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7999 ],
+            "I3": [ 7750 ]
+          }
+        },
+        "clockCounter_DFFR_Q_8_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X3Y15/LUT1"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7997 ],
+            "I3": [ 7839 ]
+          }
+        },
+        "clockCounter_DFFR_Q_1_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X5Y16/LUT5"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 8001 ],
+            "I3": [ 7721 ]
+          }
+        },
+        "clockCounter_DFFR_Q_1_D_ALU_SUM_DUMMY_ALULC": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "C2L"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y16/ALU1"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "clockCounter_DFFR_Q_23_D_ALU_SUM_CIN_ALU_COUT_HEAD_ALULC": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "C2L"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/ALU0"
+          },
+          "port_directions": {
+            "I2": "input",
+            "COUT": "output"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "COUT": [ 7949 ]
+          }
+        },
+        "ledCounter_DFFE_Q_D_ALU_SUM_DUMMY_ALULC": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "C2L"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/ALU1"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM_CIN_ALU_COUT_HEAD_ALULC": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "C2L"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/ALU0"
+          },
+          "port_directions": {
+            "I2": "input",
+            "COUT": "output"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "COUT": [ 7947 ]
+          }
+        },
+        "GSR": {
+          "hide_name": 0,
+          "type": "GSR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000010",
+            "NEXTPNR_BEL": "X0Y0/GSR"
+          },
+          "port_directions": {
+            "GSRI": "input"
+          },
+          "connections": {
+            "GSRI": [ 7942 ]
+          }
+        },
+        "led_OBUF_O_I_LUT1_F_4": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/LUT6",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:135.23-136.15",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [ 7870 ],
+            "F": [ 7917 ]
+          }
+        },
+        "led_OBUF_O_I_LUT1_F_3": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y19/LUT2",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:135.23-136.15",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [ 7865 ],
+            "F": [ 7914 ]
+          }
+        },
+        "led_OBUF_O_I_LUT1_F_2": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/LUT7",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:135.23-136.15",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [ 7860 ],
+            "F": [ 7911 ]
+          }
+        },
+        "led_OBUF_O_I_LUT1_F_1": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y24/LUT5",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:135.23-136.15",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [ 7854 ],
+            "F": [ 7908 ]
+          }
+        },
+        "led_OBUF_O_I_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y24/LUT6",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:135.23-136.15",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [ 7851 ],
+            "F": [ 7905 ]
+          }
+        },
+        "led_OBUF_O_5_I_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y15/LUT0",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:135.23-136.15",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [ 7874 ],
+            "F": [ 7880 ]
+          }
+        },
+        "led_OBUF_O_5": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y14/IOBA",
+            "src": "/home/prima/GR8GG/counter.v:4.18-4.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7920 ],
+            "I": [ 7880 ]
+          }
+        },
+        "led_OBUF_O_4": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y15/IOBB",
+            "src": "/home/prima/GR8GG/counter.v:4.18-4.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7918 ],
+            "I": [ 7917 ]
+          }
+        },
+        "led_OBUF_O_3": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y20/IOBB",
+            "src": "/home/prima/GR8GG/counter.v:4.18-4.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7915 ],
+            "I": [ 7914 ]
+          }
+        },
+        "led_OBUF_O_2": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y21/IOBB",
+            "src": "/home/prima/GR8GG/counter.v:4.18-4.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7912 ],
+            "I": [ 7911 ]
+          }
+        },
+        "led_OBUF_O_1": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y24/IOBB",
+            "src": "/home/prima/GR8GG/counter.v:4.18-4.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7909 ],
+            "I": [ 7908 ]
+          }
+        },
+        "led_OBUF_O": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y25/IOBB",
+            "src": "/home/prima/GR8GG/counter.v:4.18-4.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7906 ],
+            "I": [ 7905 ]
+          }
+        },
+        "ledCounter_DFFE_Q_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/ALU0",
+            "src": "/home/prima/GR8GG/counter.v:15.23-15.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7850 ],
+            "I3": [  ],
+            "I1": [ 7851 ],
+            "I0": [  ],
+            "COUT": [ 7903 ],
+            "CIN": [ 7857 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3_MUX2_LUT5_O_S0_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/LUT6",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7717 ],
+            "I2": [ 7806 ],
+            "I1": [ 7801 ],
+            "I0": [ 7796 ],
+            "F": [ 7891 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3_MUX2_LUT5_O_I1_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000001000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/LUT7",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:153.41-153.66|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7791 ],
+            "I2": [ 7779 ],
+            "I1": [ 7773 ],
+            "I0": [ 7767 ],
+            "F": [ 7890 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3_MUX2_LUT5_O_I0_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "00"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/LUT6",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:152.41-152.66|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [  ],
+            "F": [ 7889 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3_MUX2_LUT5_O_1_S0_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000010000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y15/LUT6",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7761 ],
+            "I2": [ 7756 ],
+            "I1": [ 7751 ],
+            "I0": [ 7746 ],
+            "F": [ 7895 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3_MUX2_LUT5_O_1_I1_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y15/LUT7",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:153.41-153.66|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7741 ],
+            "I2": [ 7735 ],
+            "I1": [ 7726 ],
+            "I0": [ 7846 ],
+            "F": [ 7894 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3_MUX2_LUT5_O_1_I0_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "00"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y15/LUT6",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:152.41-152.66|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [  ],
+            "F": [ 7893 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3_MUX2_LUT5_O_1": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y15/MUX6",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7895 ],
+            "O": [ 7884 ],
+            "I1": [ 7894 ],
+            "I0": [ 7893 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3_MUX2_LUT5_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/MUX6",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7891 ],
+            "O": [ 7885 ],
+            "I1": [ 7890 ],
+            "I0": [ 7889 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3_LUT4_F_1": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000001000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/LUT6",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7820 ],
+            "I2": [ 7815 ],
+            "I1": [ 7787 ],
+            "I0": [ 7722 ],
+            "F": [ 7883 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000100000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/LUT7",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7840 ],
+            "I2": [ 7835 ],
+            "I1": [ 7830 ],
+            "I0": [ 7825 ],
+            "F": [ 7882 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/LUT7",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7885 ],
+            "I2": [ 7884 ],
+            "I1": [ 7883 ],
+            "I0": [ 7882 ],
+            "F": [ 7718 ]
+          }
+        },
+        "ledCounter_DFFE_Q_5": {
+          "hide_name": 0,
+          "type": "DFFE",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y15/DFF0",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:19.7-19.56",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input",
+            "CE": "input"
+          },
+          "connections": {
+            "Q": [ 7874 ],
+            "D": [ 7880 ],
+            "CLK": [ 7713 ],
+            "CE": [ 7718 ]
+          }
+        },
+        "$PACKER_GND_DRV": {
+          "hide_name": 1,
+          "type": "GOWIN_GND",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000010",
+            "NEXTPNR_BEL": "X0Y0/GND"
+          },
+          "port_directions": {
+            "G": "output"
+          },
+          "connections": {
+            "G": [ 7943 ]
+          }
+        },
+        "$PACKER_VCC_DRV": {
+          "hide_name": 1,
+          "type": "GOWIN_VCC",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000010",
+            "NEXTPNR_BEL": "X0Y0/VCC"
+          },
+          "port_directions": {
+            "V": "output"
+          },
+          "connections": {
+            "V": [ 7942 ]
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM_CIN_ALU_COUT": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000000011000000111111",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/ALU1",
+            "src": "/home/prima/GR8GG/counter.v:15.23-15.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7875 ],
+            "I3": [  ],
+            "I1": [ 7874 ],
+            "I0": [  ],
+            "COUT": [ 7872 ],
+            "CIN": [ 7947 ]
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/ALU2",
+            "src": "/home/prima/GR8GG/counter.v:15.23-15.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7869 ],
+            "I3": [  ],
+            "I1": [ 7870 ],
+            "I0": [  ],
+            "COUT": [ 7867 ],
+            "CIN": [ 7872 ]
+          }
+        },
+        "ledCounter_DFFE_Q_4": {
+          "hide_name": 0,
+          "type": "DFFE",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/DFF2",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:19.7-19.56",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input",
+            "CE": "input"
+          },
+          "connections": {
+            "Q": [ 7870 ],
+            "D": [ 7869 ],
+            "CLK": [ 7713 ],
+            "CE": [ 7718 ]
+          }
+        },
+        "ledCounter_DFFE_Q_3_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/ALU3",
+            "src": "/home/prima/GR8GG/counter.v:15.23-15.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7864 ],
+            "I3": [  ],
+            "I1": [ 7865 ],
+            "I0": [  ],
+            "COUT": [ 7862 ],
+            "CIN": [ 7867 ]
+          }
+        },
+        "ledCounter_DFFE_Q_3": {
+          "hide_name": 0,
+          "type": "DFFE",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/DFF3",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:19.7-19.56",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input",
+            "CE": "input"
+          },
+          "connections": {
+            "Q": [ 7865 ],
+            "D": [ 7864 ],
+            "CLK": [ 7713 ],
+            "CE": [ 7718 ]
+          }
+        },
+        "ledCounter_DFFE_Q_2_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/ALU4",
+            "src": "/home/prima/GR8GG/counter.v:15.23-15.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7859 ],
+            "I3": [  ],
+            "I1": [ 7860 ],
+            "I0": [  ],
+            "COUT": [ 7856 ],
+            "CIN": [ 7862 ]
+          }
+        },
+        "ledCounter_DFFE_Q_2": {
+          "hide_name": 0,
+          "type": "DFFE",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/DFF4",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:19.7-19.56",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input",
+            "CE": "input"
+          },
+          "connections": {
+            "Q": [ 7860 ],
+            "D": [ 7859 ],
+            "CLK": [ 7713 ],
+            "CE": [ 7718 ]
+          }
+        },
+        "ledCounter_DFFE_Q_1_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/ALU5",
+            "src": "/home/prima/GR8GG/counter.v:15.23-15.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7853 ],
+            "I3": [  ],
+            "I1": [ 7854 ],
+            "I0": [  ],
+            "COUT": [ 7857 ],
+            "CIN": [ 7856 ]
+          }
+        },
+        "ledCounter_DFFE_Q_1": {
+          "hide_name": 0,
+          "type": "DFFE",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/DFF5",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:19.7-19.56",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input",
+            "CE": "input"
+          },
+          "connections": {
+            "Q": [ 7854 ],
+            "D": [ 7853 ],
+            "CLK": [ 7713 ],
+            "CE": [ 7718 ]
+          }
+        },
+        "ledCounter_DFFE_Q": {
+          "hide_name": 0,
+          "type": "DFFE",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/DFF0",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:19.7-19.56",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input",
+            "CE": "input"
+          },
+          "connections": {
+            "Q": [ 7851 ],
+            "D": [ 7850 ],
+            "CLK": [ 7713 ],
+            "CE": [ 7718 ]
+          }
+        },
+        "clockCounter_DFFR_Q_D_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y15/LUT2",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:135.23-136.15",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [ 7717 ],
+            "F": [ 7716 ]
+          }
+        },
+        "clockCounter_DFFR_Q_9_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/ALU4",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7844 ],
+            "I3": [  ],
+            "I1": [ 7846 ],
+            "I0": [  ],
+            "COUT": [ 7842 ],
+            "CIN": [ 7729 ]
+          }
+        },
+        "clockCounter_DFFR_Q_9": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/DFF4",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7846 ],
+            "D": [ 7844 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_8_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/ALU5",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7839 ],
+            "I3": [  ],
+            "I1": [ 7840 ],
+            "I0": [  ],
+            "COUT": [ 7837 ],
+            "CIN": [ 7842 ]
+          }
+        },
+        "clockCounter_DFFR_Q_8": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y15/DFF1",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7840 ],
+            "D": [ 7997 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_7_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/ALU0",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7834 ],
+            "I3": [  ],
+            "I1": [ 7835 ],
+            "I0": [  ],
+            "COUT": [ 7832 ],
+            "CIN": [ 7837 ]
+          }
+        },
+        "clockCounter_DFFR_Q_7": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/DFF0",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7835 ],
+            "D": [ 7834 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_6_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/ALU1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7829 ],
+            "I3": [  ],
+            "I1": [ 7830 ],
+            "I0": [  ],
+            "COUT": [ 7827 ],
+            "CIN": [ 7832 ]
+          }
+        },
+        "clockCounter_DFFR_Q_6": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/DFF1",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7830 ],
+            "D": [ 7829 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_5_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/ALU2",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7824 ],
+            "I3": [  ],
+            "I1": [ 7825 ],
+            "I0": [  ],
+            "COUT": [ 7822 ],
+            "CIN": [ 7827 ]
+          }
+        },
+        "clockCounter_DFFR_Q_5": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/DFF2",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7825 ],
+            "D": [ 7824 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_4_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/ALU3",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7819 ],
+            "I3": [  ],
+            "I1": [ 7820 ],
+            "I0": [  ],
+            "COUT": [ 7817 ],
+            "CIN": [ 7822 ]
+          }
+        },
+        "clockCounter_DFFR_Q_4": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/DFF3",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7820 ],
+            "D": [ 7819 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_3_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/ALU4",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7814 ],
+            "I3": [  ],
+            "I1": [ 7815 ],
+            "I0": [  ],
+            "COUT": [ 7812 ],
+            "CIN": [ 7817 ]
+          }
+        },
+        "clockCounter_DFFR_Q_3": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/DFF4",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7815 ],
+            "D": [ 7814 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_2_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/ALU5",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7786 ],
+            "I3": [  ],
+            "I1": [ 7787 ],
+            "I0": [  ],
+            "COUT": [ 7783 ],
+            "CIN": [ 7812 ]
+          }
+        },
+        "clockCounter_DFFR_Q_23_D_ALU_SUM_CIN_ALU_COUT": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000000011000000111111",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/ALU1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7810 ],
+            "I3": [  ],
+            "I1": [ 7717 ],
+            "I0": [  ],
+            "COUT": [ 7808 ],
+            "CIN": [ 7949 ]
+          }
+        },
+        "clockCounter_DFFR_Q_23_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/ALU2",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7805 ],
+            "I3": [  ],
+            "I1": [ 7806 ],
+            "I0": [  ],
+            "COUT": [ 7803 ],
+            "CIN": [ 7808 ]
+          }
+        },
+        "clockCounter_DFFR_Q_23": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/DFF2",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7806 ],
+            "D": [ 7805 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_22_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/ALU3",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7800 ],
+            "I3": [  ],
+            "I1": [ 7801 ],
+            "I0": [  ],
+            "COUT": [ 7798 ],
+            "CIN": [ 7803 ]
+          }
+        },
+        "clockCounter_DFFR_Q_22": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/DFF3",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7801 ],
+            "D": [ 7800 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_21_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/ALU4",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7795 ],
+            "I3": [  ],
+            "I1": [ 7796 ],
+            "I0": [  ],
+            "COUT": [ 7793 ],
+            "CIN": [ 7798 ]
+          }
+        },
+        "clockCounter_DFFR_Q_21": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/DFF4",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7796 ],
+            "D": [ 7795 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_20_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/ALU5",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7789 ],
+            "I3": [  ],
+            "I1": [ 7791 ],
+            "I0": [  ],
+            "COUT": [ 7781 ],
+            "CIN": [ 7793 ]
+          }
+        },
+        "clockCounter_DFFR_Q_20": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/DFF5",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7791 ],
+            "D": [ 7789 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_2": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/DFF5",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7787 ],
+            "D": [ 7786 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_1_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y16/ALU0",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7721 ],
+            "I3": [  ],
+            "I1": [ 7722 ],
+            "I0": [  ],
+            "COUT": [ 7784 ],
+            "CIN": [ 7783 ]
+          }
+        },
+        "clockCounter_DFFR_Q_19_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/ALU0",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7777 ],
+            "I3": [  ],
+            "I1": [ 7779 ],
+            "I0": [  ],
+            "COUT": [ 7775 ],
+            "CIN": [ 7781 ]
+          }
+        },
+        "clockCounter_DFFR_Q_19": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/DFF0",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7779 ],
+            "D": [ 7777 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_18_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/ALU1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7771 ],
+            "I3": [  ],
+            "I1": [ 7773 ],
+            "I0": [  ],
+            "COUT": [ 7769 ],
+            "CIN": [ 7775 ]
+          }
+        },
+        "clockCounter_DFFR_Q_18": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/DFF1",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7773 ],
+            "D": [ 7771 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_17_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/ALU2",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7765 ],
+            "I3": [  ],
+            "I1": [ 7767 ],
+            "I0": [  ],
+            "COUT": [ 7763 ],
+            "CIN": [ 7769 ]
+          }
+        },
+        "clockCounter_DFFR_Q_17": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/DFF2",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7767 ],
+            "D": [ 7765 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_16_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/ALU3",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7760 ],
+            "I3": [  ],
+            "I1": [ 7761 ],
+            "I0": [  ],
+            "COUT": [ 7758 ],
+            "CIN": [ 7763 ]
+          }
+        },
+        "clockCounter_DFFR_Q_16": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/DFF3",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7761 ],
+            "D": [ 7760 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_15_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/ALU4",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7755 ],
+            "I3": [  ],
+            "I1": [ 7756 ],
+            "I0": [  ],
+            "COUT": [ 7753 ],
+            "CIN": [ 7758 ]
+          }
+        },
+        "clockCounter_DFFR_Q_15": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/DFF4",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7756 ],
+            "D": [ 7755 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_14_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/ALU5",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7750 ],
+            "I3": [  ],
+            "I1": [ 7751 ],
+            "I0": [  ],
+            "COUT": [ 7748 ],
+            "CIN": [ 7753 ]
+          }
+        },
+        "clockCounter_DFFR_Q_14": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y15/DFF1",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7751 ],
+            "D": [ 7999 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_13_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/ALU0",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7745 ],
+            "I3": [  ],
+            "I1": [ 7746 ],
+            "I0": [  ],
+            "COUT": [ 7743 ],
+            "CIN": [ 7748 ]
+          }
+        },
+        "clockCounter_DFFR_Q_13": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/DFF0",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7746 ],
+            "D": [ 7745 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_12_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/ALU1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7739 ],
+            "I3": [  ],
+            "I1": [ 7741 ],
+            "I0": [  ],
+            "COUT": [ 7737 ],
+            "CIN": [ 7743 ]
+          }
+        },
+        "clockCounter_DFFR_Q_12": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/DFF1",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7741 ],
+            "D": [ 7739 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_11_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/ALU2",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7733 ],
+            "I3": [  ],
+            "I1": [ 7735 ],
+            "I0": [  ],
+            "COUT": [ 7728 ],
+            "CIN": [ 7737 ]
+          }
+        },
+        "clockCounter_DFFR_Q_11": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/DFF2",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7735 ],
+            "D": [ 7733 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_10_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000011000000",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/ALU3",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7942 ],
+            "SUM": [ 7724 ],
+            "I3": [  ],
+            "I1": [ 7726 ],
+            "I0": [  ],
+            "COUT": [ 7729 ],
+            "CIN": [ 7728 ]
+          }
+        },
+        "clockCounter_DFFR_Q_10": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/DFF3",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7726 ],
+            "D": [ 7724 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q_1": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y16/DFF5",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7722 ],
+            "D": [ 8001 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clockCounter_DFFR_Q": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y15/DFF2",
+            "src": "/home/prima/GR8GG/counter.v:11.1-17.4|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7718 ],
+            "Q": [ 7717 ],
+            "D": [ 7716 ],
+            "CLK": [ 7713 ]
+          }
+        },
+        "clk_IBUF_I": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X46Y16/IOBA",
+            "src": "/home/prima/GR8GG/counter.v:3.11-3.14",
+            "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+            "&PULL_MODE=UP": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7713 ],
+            "I": [ 7709 ]
+          }
+        }
+      },
+      "netnames": {
+        "clockCounter_DFFR_Q_1$conn$D": {
+          "hide_name": 0,
+          "bits": [ 8001 ] ,
+          "attributes": {
+            "ROUTING": "X5Y16/F5;;1;X5Y16/XD5;X5Y16/XD5/F5;1"
+          }
+        },
+        "clockCounter_DFFR_Q_14$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7999 ] ,
+          "attributes": {
+            "ROUTING": "X2Y15/F1;;1;X2Y15/XD1;X2Y15/XD1/F1;1"
+          }
+        },
+        "clockCounter_DFFR_Q_8$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7997 ] ,
+          "attributes": {
+            "ROUTING": "X3Y15/F1;;1;X3Y15/XD1;X3Y15/XD1/F1;1"
+          }
+        },
+        "clockCounter_DFFR_Q_23_D_ALU_SUM_CIN_ALU_COUT_HEAD_ALULC": {
+          "hide_name": 0,
+          "bits": [ 7949 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/COUT0;;1"
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM_CIN_ALU_COUT_HEAD_ALULC": {
+          "hide_name": 0,
+          "bits": [ 7947 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/COUT0;;1"
+          }
+        },
+        "led[0]": {
+          "hide_name": 0,
+          "bits": [ 7920 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/home/prima/GR8GG/counter.v:4.18-4.21"
+          }
+        },
+        "led[1]": {
+          "hide_name": 0,
+          "bits": [ 7918 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/home/prima/GR8GG/counter.v:4.18-4.21"
+          }
+        },
+        "led_OBUF_O_I[1]": {
+          "hide_name": 0,
+          "bits": [ 7917 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/F6;;1;X1Y17/EW20;X1Y17/EW20/F6;1;X0Y17/N260;X0Y17/N260/W121;1;X0Y15/X03;X0Y15/X03/N262;1;X0Y15/D1;X0Y15/D1/X03;1"
+          }
+        },
+        "led[2]": {
+          "hide_name": 0,
+          "bits": [ 7915 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/home/prima/GR8GG/counter.v:4.18-4.21"
+          }
+        },
+        "led_OBUF_O_I[2]": {
+          "hide_name": 0,
+          "bits": [ 7914 ] ,
+          "attributes": {
+            "ROUTING": "X1Y19/F2;;1;X1Y19/W100;X1Y19/W100/F2;1;X0Y19/S200;X0Y19/S200/W101;1;X0Y20/D1;X0Y20/D1/S201;1"
+          }
+        },
+        "led[3]": {
+          "hide_name": 0,
+          "bits": [ 7912 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/home/prima/GR8GG/counter.v:4.18-4.21"
+          }
+        },
+        "led_OBUF_O_I[3]": {
+          "hide_name": 0,
+          "bits": [ 7911 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/F7;;1;X1Y17/S270;X1Y17/S270/F7;1;X1Y19/S220;X1Y19/S220/S272;1;X1Y21/W220;X1Y21/W220/S222;1;X0Y21/D1;X0Y21/D1/W221;1"
+          }
+        },
+        "led[4]": {
+          "hide_name": 0,
+          "bits": [ 7909 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/home/prima/GR8GG/counter.v:4.18-4.21"
+          }
+        },
+        "led_OBUF_O_I[4]": {
+          "hide_name": 0,
+          "bits": [ 7908 ] ,
+          "attributes": {
+            "ROUTING": "X1Y24/F5;;1;X1Y24/EW20;X1Y24/EW20/F5;1;X0Y24/D1;X0Y24/D1/W121;1"
+          }
+        },
+        "led[5]": {
+          "hide_name": 0,
+          "bits": [ 7906 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/home/prima/GR8GG/counter.v:4.18-4.21"
+          }
+        },
+        "led_OBUF_O_I[5]": {
+          "hide_name": 0,
+          "bits": [ 7905 ] ,
+          "attributes": {
+            "ROUTING": "X2Y24/F6;;1;X2Y24/S100;X2Y24/S100/F6;1;X2Y25/W200;X2Y25/W200/S101;1;X0Y25/D1;X0Y25/D1/W202;1"
+          }
+        },
+        "ledCounter_DFFE_Q_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7903 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "0 ",
+            "src": "/home/prima/GR8GG/counter.v:15.23-15.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3_MUX2_LUT5_O_1_S0[4]": {
+          "hide_name": 0,
+          "bits": [ 7895 ] ,
+          "attributes": {
+            "ROUTING": "X2Y15/F6;;1;X2Y15/E260;X2Y15/E260/F6;1;X3Y15/SEL6;X3Y15/SEL6/E261;1",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3_MUX2_LUT5_O_1_I1": {
+          "hide_name": 0,
+          "bits": [ 7894 ] ,
+          "attributes": {
+            "ROUTING": "X3Y15/F7;;1",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3_MUX2_LUT5_O_1_I0": {
+          "hide_name": 0,
+          "bits": [ 7893 ] ,
+          "attributes": {
+            "ROUTING": "X3Y15/F6;;1",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3_MUX2_LUT5_O_S0[4]": {
+          "hide_name": 0,
+          "bits": [ 7891 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/F6;;1;X1Y16/E260;X1Y16/E260/F6;1;X2Y16/SEL6;X2Y16/SEL6/E261;1",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7890 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/F7;;1",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7889 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/F6;;1",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3[3]": {
+          "hide_name": 0,
+          "bits": [ 7885 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/OF6;;1;X2Y16/E260;X2Y16/E260/OF6;1;X3Y16/X07;X3Y16/X07/E261;1;X3Y16/D7;X3Y16/D7/X07;1",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3[2]": {
+          "hide_name": 0,
+          "bits": [ 7884 ] ,
+          "attributes": {
+            "ROUTING": "X3Y15/OF6;;1;X3Y15/S260;X3Y15/S260/OF6;1;X3Y16/X05;X3Y16/X05/S261;1;X3Y16/C7;X3Y16/C7/X05;1",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3[1]": {
+          "hide_name": 0,
+          "bits": [ 7883 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/F6;;1;X4Y16/EW10;X4Y16/EW10/F6;1;X3Y16/B7;X3Y16/B7/W111;1",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I3[0]": {
+          "hide_name": 0,
+          "bits": [ 7882 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/F7;;1;X4Y16/W270;X4Y16/W270/F7;1;X3Y16/A7;X3Y16/A7/W271;1",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "led_OBUF_O_5_I": {
+          "hide_name": 0,
+          "bits": [ 7880 ] ,
+          "attributes": {
+            "ROUTING": "X1Y15/XD0;X1Y15/XD0/F0;1;X1Y15/F0;;1;X1Y15/W130;X1Y15/W130/F0;1;X0Y15/N270;X0Y15/N270/W131;1;X0Y14/A0;X0Y14/A0/N271;1"
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM_CIN_ALU_COUT_SUM": {
+          "hide_name": 0,
+          "bits": [ 7875 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "0 "
+          }
+        },
+        "ledCounter[0]": {
+          "hide_name": 0,
+          "bits": [ 7874 ] ,
+          "attributes": {
+            "ROUTING": "X1Y15/N100;X1Y15/N100/Q0;1;X1Y15/A0;X1Y15/A0/N100;1;X1Y15/Q0;;1;X1Y15/S200;X1Y15/S200/Q0;1;X1Y17/X07;X1Y17/X07/S202;1;X1Y17/B1;X1Y17/B1/X07;1",
+            "src": "/home/prima/GR8GG/counter.v:8.11-8.21"
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM_CIN": {
+          "hide_name": 0,
+          "bits": [ 7872 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/COUT1;;1",
+            "src": "/home/prima/GR8GG/counter.v:15.23-15.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter[1]": {
+          "hide_name": 0,
+          "bits": [ 7870 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/A6;X1Y17/A6/X01;1;X1Y17/Q2;;1;X1Y17/X01;X1Y17/X01/Q2;1;X1Y17/B2;X1Y17/B2/X01;1",
+            "src": "/home/prima/GR8GG/counter.v:8.11-8.21"
+          }
+        },
+        "ledCounter_DFFE_Q_4_D": {
+          "hide_name": 0,
+          "bits": [ 7869 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/F2;;1;X1Y17/XD2;X1Y17/XD2/F2;1"
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7867 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/COUT2;;1",
+            "src": "/home/prima/GR8GG/counter.v:15.23-15.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter[2]": {
+          "hide_name": 0,
+          "bits": [ 7865 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/S230;X1Y17/S230/Q3;1;X1Y19/X02;X1Y19/X02/S232;1;X1Y19/A2;X1Y19/A2/X02;1;X1Y17/Q3;;1;X1Y17/B3;X1Y17/B3/Q3;1",
+            "src": "/home/prima/GR8GG/counter.v:8.11-8.21"
+          }
+        },
+        "ledCounter_DFFE_Q_3_D": {
+          "hide_name": 0,
+          "bits": [ 7864 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/F3;;1;X1Y17/XD3;X1Y17/XD3/F3;1"
+          }
+        },
+        "ledCounter_DFFE_Q_3_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7862 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/COUT3;;1",
+            "src": "/home/prima/GR8GG/counter.v:15.23-15.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter[3]": {
+          "hide_name": 0,
+          "bits": [ 7860 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/X03;X1Y17/X03/Q4;1;X1Y17/A7;X1Y17/A7/X03;1;X1Y17/Q4;;1;X1Y17/W100;X1Y17/W100/Q4;1;X1Y17/B4;X1Y17/B4/W100;1",
+            "src": "/home/prima/GR8GG/counter.v:8.11-8.21"
+          }
+        },
+        "ledCounter_DFFE_Q_2_D": {
+          "hide_name": 0,
+          "bits": [ 7859 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/F4;;1;X1Y17/XD4;X1Y17/XD4/F4;1"
+          }
+        },
+        "ledCounter_DFFE_Q_1_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7857 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/CIN0;;1",
+            "src": "/home/prima/GR8GG/counter.v:15.23-15.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_2_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7856 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/COUT4;;1",
+            "src": "/home/prima/GR8GG/counter.v:15.23-15.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter[4]": {
+          "hide_name": 0,
+          "bits": [ 7854 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/S830;X1Y17/S830/Q5;1;X1Y25/N250;X1Y25/N250/S838;1;X1Y24/X06;X1Y24/X06/N251;1;X1Y24/A5;X1Y24/A5/X06;1;X1Y17/Q5;;1;X1Y17/X08;X1Y17/X08/Q5;1;X1Y17/B5;X1Y17/B5/X08;1",
+            "src": "/home/prima/GR8GG/counter.v:8.11-8.21"
+          }
+        },
+        "ledCounter_DFFE_Q_1_D": {
+          "hide_name": 0,
+          "bits": [ 7853 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/F5;;1;X1Y17/XD5;X1Y17/XD5/F5;1"
+          }
+        },
+        "ledCounter[5]": {
+          "hide_name": 0,
+          "bits": [ 7851 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/S800;X2Y17/S800/Q0;1;X2Y25/N230;X2Y25/N230/S808;1;X2Y24/A6;X2Y24/A6/N231;1;X2Y17/Q0;;1;X2Y17/X05;X2Y17/X05/Q0;1;X2Y17/B0;X2Y17/B0/X05;1",
+            "src": "/home/prima/GR8GG/counter.v:8.11-8.21"
+          }
+        },
+        "ledCounter_DFFE_Q_D": {
+          "hide_name": 0,
+          "bits": [ 7850 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/F0;;1;X2Y17/XD0;X2Y17/XD0/F0;1"
+          }
+        },
+        "clockCounter[15]": {
+          "hide_name": 0,
+          "bits": [ 7846 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/X03;X3Y16/X03/Q4;1;X3Y16/B4;X3Y16/B4/X03;1;X3Y16/Q4;;1;X3Y16/SN20;X3Y16/SN20/Q4;1;X3Y15/A7;X3Y15/A7/N121;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_9_D": {
+          "hide_name": 0,
+          "bits": [ 7844 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/F4;;1;X3Y16/XD4;X3Y16/XD4/F4;1"
+          }
+        },
+        "clockCounter_DFFR_Q_9_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7842 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/COUT4;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[16]": {
+          "hide_name": 0,
+          "bits": [ 7840 ] ,
+          "attributes": {
+            "ROUTING": "X3Y15/SN20;X3Y15/SN20/Q1;1;X3Y16/B5;X3Y16/B5/S121;1;X3Y15/Q1;;1;X3Y15/EW20;X3Y15/EW20/Q1;1;X4Y15/S260;X4Y15/S260/E121;1;X4Y16/D7;X4Y16/D7/S261;1",
+            "src": "/home/prima/GR8GG/counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_8_D": {
+          "hide_name": 0,
+          "bits": [ 7839 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/F5;;1;X3Y16/N250;X3Y16/N250/F5;1;X3Y15/X06;X3Y15/X06/N251;1;X3Y15/D1;X3Y15/D1/X06;1"
+          }
+        },
+        "clockCounter_DFFR_Q_8_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7837 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/CIN0;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[17]": {
+          "hide_name": 0,
+          "bits": [ 7835 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/B0;X4Y16/B0/X05;1;X4Y16/Q0;;1;X4Y16/X05;X4Y16/X05/Q0;1;X4Y16/C7;X4Y16/C7/X05;1",
+            "src": "/home/prima/GR8GG/counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_7_D": {
+          "hide_name": 0,
+          "bits": [ 7834 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/F0;;1;X4Y16/XD0;X4Y16/XD0/F0;1"
+          }
+        },
+        "clockCounter_DFFR_Q_7_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7832 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/COUT0;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[18]": {
+          "hide_name": 0,
+          "bits": [ 7830 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/B1;X4Y16/B1/Q1;1;X4Y16/Q1;;1;X4Y16/W130;X4Y16/W130/Q1;1;X4Y16/B7;X4Y16/B7/W130;1",
+            "src": "/home/prima/GR8GG/counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_6_D": {
+          "hide_name": 0,
+          "bits": [ 7829 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/F1;;1;X4Y16/XD1;X4Y16/XD1/F1;1"
+          }
+        },
+        "clockCounter_DFFR_Q_6_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7827 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/COUT1;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[19]": {
+          "hide_name": 0,
+          "bits": [ 7825 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/B2;X4Y16/B2/X01;1;X4Y16/Q2;;1;X4Y16/X01;X4Y16/X01/Q2;1;X4Y16/A7;X4Y16/A7/X01;1",
+            "src": "/home/prima/GR8GG/counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_5_D": {
+          "hide_name": 0,
+          "bits": [ 7824 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/F2;;1;X4Y16/XD2;X4Y16/XD2/F2;1"
+          }
+        },
+        "clockCounter_DFFR_Q_5_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7822 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/COUT2;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[20]": {
+          "hide_name": 0,
+          "bits": [ 7820 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/B3;X4Y16/B3/Q3;1;X4Y16/Q3;;1;X4Y16/X02;X4Y16/X02/Q3;1;X4Y16/D6;X4Y16/D6/X02;1",
+            "src": "/home/prima/GR8GG/counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_4_D": {
+          "hide_name": 0,
+          "bits": [ 7819 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/F3;;1;X4Y16/XD3;X4Y16/XD3/F3;1"
+          }
+        },
+        "clockCounter_DFFR_Q_4_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7817 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/COUT3;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[21]": {
+          "hide_name": 0,
+          "bits": [ 7815 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/X03;X4Y16/X03/Q4;1;X4Y16/B4;X4Y16/B4/X03;1;X4Y16/Q4;;1;X4Y16/N130;X4Y16/N130/Q4;1;X4Y16/C6;X4Y16/C6/N130;1",
+            "src": "/home/prima/GR8GG/counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_3_D": {
+          "hide_name": 0,
+          "bits": [ 7814 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/F4;;1;X4Y16/XD4;X4Y16/XD4/F4;1"
+          }
+        },
+        "clockCounter_DFFR_Q_3_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7812 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/COUT4;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter_DFFR_Q_23_D_ALU_SUM_CIN_ALU_COUT_SUM": {
+          "hide_name": 0,
+          "bits": [ 7810 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "0 "
+          }
+        },
+        "clockCounter_DFFR_Q_23_D_ALU_SUM_CIN": {
+          "hide_name": 0,
+          "bits": [ 7808 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/COUT1;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[1]": {
+          "hide_name": 0,
+          "bits": [ 7806 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/N130;X1Y16/N130/Q2;1;X1Y16/C6;X1Y16/C6/N130;1;X1Y16/Q2;;1;X1Y16/X01;X1Y16/X01/Q2;1;X1Y16/B2;X1Y16/B2/X01;1",
+            "src": "/home/prima/GR8GG/counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_23_D": {
+          "hide_name": 0,
+          "bits": [ 7805 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/F2;;1;X1Y16/XD2;X1Y16/XD2/F2;1"
+          }
+        },
+        "clockCounter_DFFR_Q_23_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7803 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/COUT2;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[2]": {
+          "hide_name": 0,
+          "bits": [ 7801 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/W130;X1Y16/W130/Q3;1;X1Y16/B6;X1Y16/B6/W130;1;X1Y16/Q3;;1;X1Y16/B3;X1Y16/B3/Q3;1",
+            "src": "/home/prima/GR8GG/counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_22_D": {
+          "hide_name": 0,
+          "bits": [ 7800 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/F3;;1;X1Y16/XD3;X1Y16/XD3/F3;1"
+          }
+        },
+        "clockCounter_DFFR_Q_22_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7798 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/COUT3;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[3]": {
+          "hide_name": 0,
+          "bits": [ 7796 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/X03;X1Y16/X03/Q4;1;X1Y16/A6;X1Y16/A6/X03;1;X1Y16/Q4;;1;X1Y16/N240;X1Y16/N240/Q4;1;X1Y16/B4;X1Y16/B4/N240;1",
+            "src": "/home/prima/GR8GG/counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_21_D": {
+          "hide_name": 0,
+          "bits": [ 7795 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/F4;;1;X1Y16/XD4;X1Y16/XD4/F4;1"
+          }
+        },
+        "clockCounter_DFFR_Q_21_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7793 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/COUT4;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[4]": {
+          "hide_name": 0,
+          "bits": [ 7791 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/X08;X1Y16/X08/Q5;1;X1Y16/B5;X1Y16/B5/X08;1;X1Y16/Q5;;1;X1Y16/E100;X1Y16/E100/Q5;1;X2Y16/D7;X2Y16/D7/E101;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_20_D": {
+          "hide_name": 0,
+          "bits": [ 7789 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/F5;;1;X1Y16/XD5;X1Y16/XD5/F5;1"
+          }
+        },
+        "clockCounter[22]": {
+          "hide_name": 0,
+          "bits": [ 7787 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/B5;X4Y16/B5/X08;1;X4Y16/Q5;;1;X4Y16/X08;X4Y16/X08/Q5;1;X4Y16/B6;X4Y16/B6/X08;1",
+            "src": "/home/prima/GR8GG/counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_2_D": {
+          "hide_name": 0,
+          "bits": [ 7786 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/F5;;1;X4Y16/XD5;X4Y16/XD5/F5;1"
+          }
+        },
+        "clockCounter_DFFR_Q_1_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7784 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "0 ",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter_DFFR_Q_2_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7783 ] ,
+          "attributes": {
+            "ROUTING": "X5Y16/CIN0;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter_DFFR_Q_20_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7781 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/CIN0;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[5]": {
+          "hide_name": 0,
+          "bits": [ 7779 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/C7;X2Y16/C7/X05;1;X2Y16/Q0;;1;X2Y16/X05;X2Y16/X05/Q0;1;X2Y16/B0;X2Y16/B0/X05;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_19_D": {
+          "hide_name": 0,
+          "bits": [ 7777 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/F0;;1;X2Y16/XD0;X2Y16/XD0/F0;1"
+          }
+        },
+        "clockCounter_DFFR_Q_19_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7775 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/COUT0;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[6]": {
+          "hide_name": 0,
+          "bits": [ 7773 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/W130;X2Y16/W130/Q1;1;X2Y16/B7;X2Y16/B7/W130;1;X2Y16/Q1;;1;X2Y16/B1;X2Y16/B1/Q1;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_18_D": {
+          "hide_name": 0,
+          "bits": [ 7771 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/F1;;1;X2Y16/XD1;X2Y16/XD1/F1;1"
+          }
+        },
+        "clockCounter_DFFR_Q_18_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7769 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/COUT1;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[7]": {
+          "hide_name": 0,
+          "bits": [ 7767 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/A7;X2Y16/A7/X01;1;X2Y16/Q2;;1;X2Y16/X01;X2Y16/X01/Q2;1;X2Y16/B2;X2Y16/B2/X01;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_17_D": {
+          "hide_name": 0,
+          "bits": [ 7765 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/F2;;1;X2Y16/XD2;X2Y16/XD2/F2;1"
+          }
+        },
+        "clockCounter_DFFR_Q_17_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7763 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/COUT2;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[8]": {
+          "hide_name": 0,
+          "bits": [ 7761 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/B3;X2Y16/B3/Q3;1;X2Y16/Q3;;1;X2Y16/N130;X2Y16/N130/Q3;1;X2Y15/D6;X2Y15/D6/N131;1",
+            "src": "/home/prima/GR8GG/counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_16_D": {
+          "hide_name": 0,
+          "bits": [ 7760 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/F3;;1;X2Y16/XD3;X2Y16/XD3/F3;1"
+          }
+        },
+        "clockCounter_DFFR_Q_16_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7758 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/COUT3;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[9]": {
+          "hide_name": 0,
+          "bits": [ 7756 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/X03;X2Y16/X03/Q4;1;X2Y16/B4;X2Y16/B4/X03;1;X2Y16/Q4;;1;X2Y16/SN10;X2Y16/SN10/Q4;1;X2Y15/C6;X2Y15/C6/N111;1",
+            "src": "/home/prima/GR8GG/counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_15_D": {
+          "hide_name": 0,
+          "bits": [ 7755 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/F4;;1;X2Y16/XD4;X2Y16/XD4/F4;1"
+          }
+        },
+        "clockCounter_DFFR_Q_15_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7753 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/COUT4;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[10]": {
+          "hide_name": 0,
+          "bits": [ 7751 ] ,
+          "attributes": {
+            "ROUTING": "X2Y15/W130;X2Y15/W130/Q1;1;X2Y15/B6;X2Y15/B6/W130;1;X2Y15/Q1;;1;X2Y15/SN20;X2Y15/SN20/Q1;1;X2Y16/B5;X2Y16/B5/S121;1",
+            "src": "/home/prima/GR8GG/counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_14_D": {
+          "hide_name": 0,
+          "bits": [ 7750 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/F5;;1;X2Y16/N100;X2Y16/N100/F5;1;X2Y15/D1;X2Y15/D1/N101;1"
+          }
+        },
+        "clockCounter_DFFR_Q_14_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7748 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/CIN0;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[11]": {
+          "hide_name": 0,
+          "bits": [ 7746 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/S100;X3Y16/S100/Q0;1;X3Y16/B0;X3Y16/B0/S100;1;X3Y16/Q0;;1;X3Y16/W130;X3Y16/W130/Q0;1;X2Y16/N230;X2Y16/N230/W131;1;X2Y15/A6;X2Y15/A6/N231;1",
+            "src": "/home/prima/GR8GG/counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_13_D": {
+          "hide_name": 0,
+          "bits": [ 7745 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/F0;;1;X3Y16/XD0;X3Y16/XD0/F0;1"
+          }
+        },
+        "clockCounter_DFFR_Q_13_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7743 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/COUT0;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[12]": {
+          "hide_name": 0,
+          "bits": [ 7741 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/B1;X3Y16/B1/Q1;1;X3Y16/Q1;;1;X3Y16/N130;X3Y16/N130/Q1;1;X3Y15/D7;X3Y15/D7/N131;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_12_D": {
+          "hide_name": 0,
+          "bits": [ 7739 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/F1;;1;X3Y16/XD1;X3Y16/XD1/F1;1"
+          }
+        },
+        "clockCounter_DFFR_Q_12_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7737 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/COUT1;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[13]": {
+          "hide_name": 0,
+          "bits": [ 7735 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/X01;X3Y16/X01/Q2;1;X3Y16/B2;X3Y16/B2/X01;1;X3Y16/Q2;;1;X3Y16/N220;X3Y16/N220/Q2;1;X3Y15/C7;X3Y15/C7/N221;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_11_D": {
+          "hide_name": 0,
+          "bits": [ 7733 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/F2;;1;X3Y16/XD2;X3Y16/XD2/F2;1"
+          }
+        },
+        "$PACKER_GND": {
+          "hide_name": 1,
+          "bits": [ 7943 ] ,
+          "attributes": {
+            "ROUTING": " "
+          }
+        },
+        "$PACKER_VCC": {
+          "hide_name": 1,
+          "bits": [ 7942 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/C3;X1Y16/C3/W241;1;X2Y16/W240;X2Y16/W240/VCC;1;X5Y16/C0;X5Y16/C0/S261;1;X5Y15/S260;X5Y15/S260/VCC;1;X5Y15/VCC;;1;X3Y16/C5;X3Y16/C5/S221;1;X3Y15/S220;X3Y15/S220/VCC;1;X3Y16/C3;X3Y16/C3/N242;1;X3Y18/N240;X3Y18/N240/VCC;1;X1Y16/C1;X1Y16/C1/N220;1;X1Y16/N220;X1Y16/N220/VCC;1;X1Y16/C4;X1Y16/C4/N201;1;X1Y17/N200;X1Y17/N200/VCC;1;X2Y16/C1;X2Y16/C1/X04;1;X2Y16/X04;X2Y16/X04/VCC;1;X3Y16/C0;X3Y16/C0/X04;1;X3Y16/X04;X3Y16/X04/VCC;1;X2Y16/C0;X2Y16/C0/S261;1;X2Y15/S260;X2Y15/S260/VCC;1;X2Y15/VCC;;1;X3Y16/C1;X3Y16/C1/S241;1;X3Y15/S240;X3Y15/S240/VCC;1;X3Y15/VCC;;1;X0Y0/C4;X0Y0/C4/W242;1;X2Y0/W240;X2Y0/W240/VCC;1;X2Y0/VCC;;1;X3Y16/C4;X3Y16/C4/S222;1;X3Y14/S220;X3Y14/S220/VCC;1;X3Y14/VCC;;1;X4Y16/C3;X4Y16/C3/W241;1;X5Y16/W240;X5Y16/W240/VCC;1;X5Y16/VCC;;1;X3Y16/C2;X3Y16/C2/N262;1;X3Y18/N260;X3Y18/N260/VCC;1;X3Y18/VCC;;1;X2Y16/C5;X2Y16/C5/S222;1;X2Y14/S220;X2Y14/S220/VCC;1;X2Y14/VCC;;1;X1Y16/C2;X1Y16/C2/S261;1;X1Y15/S260;X1Y15/S260/VCC;1;X4Y16/C0;X4Y16/C0/S242;1;X4Y14/S240;X4Y14/S240/VCC;1;X4Y14/VCC;;1;X1Y16/C0;X1Y16/C0/X04;1;X1Y16/X04;X1Y16/X04/VCC;1;X1Y17/C2;X1Y17/C2/E241;1;X0Y17/E240;X0Y17/E240/VCC;1;X0Y17/VCC;;1;X1Y16/C5;X1Y16/C5/S202;1;X1Y14/S200;X1Y14/S200/VCC;1;X1Y14/VCC;;1;X2Y17/C0;X2Y17/C0/X04;1;X2Y17/X04;X2Y17/X04/VCC;1;X2Y17/VCC;;1;X2Y16/C3;X2Y16/C3/E262;1;X0Y16/E260;X0Y16/E260/VCC;1;X0Y16/VCC;;1;X4Y16/C2;X4Y16/C2/S241;1;X4Y15/S240;X4Y15/S240/VCC;1;X4Y15/VCC;;1;X4Y16/C5;X4Y16/C5/E241;1;X3Y16/E240;X3Y16/E240/VCC;1;X3Y16/VCC;;1;X1Y17/C3;X1Y17/C3/N262;1;X1Y19/N260;X1Y19/N260/VCC;1;X1Y19/VCC;;1;X1Y17/C0;X1Y17/C0/W242;1;X3Y17/W240;X3Y17/W240/VCC;1;X3Y17/VCC;;1;X1Y17/C4;X1Y17/C4/S222;1;X1Y15/S220;X1Y15/S220/VCC;1;X1Y15/VCC;;1;X2Y16/C2;X2Y16/C2/E241;1;X1Y16/E240;X1Y16/E240/VCC;1;X1Y16/VCC;;1;X4Y16/C4;X4Y16/C4/E242;1;X2Y16/E240;X2Y16/E240/VCC;1;X2Y16/VCC;;1;X1Y17/C5;X1Y17/C5/N221;1;X1Y18/N220;X1Y18/N220/VCC;1;X1Y18/VCC;;1;X4Y16/C1;X4Y16/C1/X04;1;X4Y16/X04;X4Y16/X04/VCC;1;X4Y16/VCC;;1;X2Y16/C4;X2Y16/C4/N202;1;X2Y18/N200;X2Y18/N200/VCC;1;X2Y18/VCC;;1;X1Y17/C1;X1Y17/C1/X04;1;X1Y17/X04;X1Y17/X04/VCC;1;X1Y17/VCC;;1"
+          }
+        },
+        "clockCounter_DFFR_Q_10_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7729 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/COUT3;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter_DFFR_Q_11_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7728 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/COUT2;;1",
+            "src": "/home/prima/GR8GG/counter.v:12.21-12.37|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/arith_map.v:57.7-63.5|/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1033.25-1033.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[14]": {
+          "hide_name": 0,
+          "bits": [ 7726 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/B3;X3Y16/B3/Q3;1;X3Y16/Q3;;1;X3Y16/N100;X3Y16/N100/Q3;1;X3Y15/B7;X3Y15/B7/N101;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/prima/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_10_D": {
+          "hide_name": 0,
+          "bits": [ 7724 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/F3;;1;X3Y16/XD3;X3Y16/XD3/F3;1"
+          }
+        },
+        "clockCounter[23]": {
+          "hide_name": 0,
+          "bits": [ 7722 ] ,
+          "attributes": {
+            "ROUTING": "X5Y16/B0;X5Y16/B0/W250;1;X5Y16/Q5;;1;X5Y16/W250;X5Y16/W250/Q5;1;X4Y16/A6;X4Y16/A6/W251;1",
+            "src": "/home/prima/GR8GG/counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_1_D": {
+          "hide_name": 0,
+          "bits": [ 7721 ] ,
+          "attributes": {
+            "ROUTING": "X5Y16/F0;;1;X5Y16/D5;X5Y16/D5/F0;1"
+          }
+        },
+        "ledCounter_DFFE_Q_CE": {
+          "hide_name": 0,
+          "bits": [ 7718 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/LSR0;X3Y16/LSR0/X08;1;X3Y16/LSR2;X3Y16/LSR2/X08;1;X3Y16/X08;X3Y16/X08/F7;1;X3Y16/LSR1;X3Y16/LSR1/X08;1;X1Y16/LSR2;X1Y16/LSR2/W211;1;X2Y16/W210;X2Y16/W210/W111;1;X1Y16/LSR1;X1Y16/LSR1/W211;1;X2Y16/LSR1;X2Y16/LSR1/X08;1;X2Y16/LSR2;X2Y16/LSR2/X08;1;X4Y16/LSR0;X4Y16/LSR0/E271;1;X3Y16/N270;X3Y16/N270/F7;1;X3Y15/LSR0;X3Y15/LSR0/N271;1;X2Y16/X08;X2Y16/X08/W271;1;X2Y16/LSR0;X2Y16/LSR0/X08;1;X1Y17/CE2;X1Y17/CE2/W212;1;X3Y17/W210;X3Y17/W210/S111;1;X2Y17/CE0;X2Y17/CE0/W211;1;X4Y16/LSR2;X4Y16/LSR2/E271;1;X4Y16/LSR1;X4Y16/LSR1/E271;1;X5Y16/LSR2;X5Y16/LSR2/E272;1;X1Y17/CE1;X1Y17/CE1/W212;1;X3Y15/W210;X3Y15/W210/N111;1;X2Y15/LSR0;X2Y15/LSR0/W211;1;X3Y16/E270;X3Y16/E270/F7;1;X1Y15/CE0;X1Y15/CE0/W212;1;X3Y16/EW10;X3Y16/EW10/F7;1;X3Y16/SN10;X3Y16/SN10/F7;1;X3Y16/F7;;1;X3Y16/W270;X3Y16/W270/F7;1;X1Y16/N270;X1Y16/N270/W272;1;X1Y15/LSR1;X1Y15/LSR1/N271;1"
+          }
+        },
+        "clockCounter[0]": {
+          "hide_name": 0,
+          "bits": [ 7717 ] ,
+          "attributes": {
+            "ROUTING": "X1Y15/N130;X1Y15/N130/Q2;1;X1Y15/A2;X1Y15/A2/N130;1;X1Y16/D6;X1Y16/D6/S111;1;X1Y15/Q2;;1;X1Y15/SN10;X1Y15/SN10/Q2;1;X1Y16/B1;X1Y16/B1/S111;1",
+            "src": "/home/prima/GR8GG/counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_D": {
+          "hide_name": 0,
+          "bits": [ 7716 ] ,
+          "attributes": {
+            "ROUTING": "X1Y15/F2;;1;X1Y15/XD2;X1Y15/XD2/F2;1"
+          }
+        },
+        "clk_IBUF_I_O": {
+          "hide_name": 0,
+          "bits": [ 7713 ] ,
+          "attributes": {
+            "ROUTING": "X1Y15/CLK0;X1Y15/CLK0/GB00;5;X1Y17/CLK1;X1Y17/CLK1/GB00;5;X1Y17/CLK2;X1Y17/CLK2/GB00;5;X5Y17/GB00;X3Y17/GBO0/GT00;5;X2Y17/CLK0;X2Y17/CLK0/GB00;5;X3Y16/CLK2;X3Y16/CLK2/GB00;5;X3Y15/CLK0;X3Y15/CLK0/GB00;5;X4Y16/CLK0;X4Y16/CLK0/GB00;5;X4Y16/CLK1;X4Y16/CLK1/GB00;5;X1Y16/CLK1;X1Y16/CLK1/GB00;5;X1Y16/CLK2;X1Y16/CLK2/GB00;5;X4Y16/CLK2;X4Y16/CLK2/GB00;5;X2Y16/CLK0;X2Y16/CLK0/GB00;5;X2Y16/CLK1;X2Y16/CLK1/GB00;5;X2Y16/CLK2;X2Y16/CLK2/GB00;5;X2Y15/CLK0;X2Y15/CLK0/GB00;5;X3Y16/CLK0;X3Y16/CLK0/GB00;5;X3Y16/CLK1;X3Y16/CLK1/GB00;5;X2Y16/GB00;X3Y16/GBO0/GT00;5;X5Y16/CLK2;X5Y16/CLK2/GB00;5;X11Y19/SPINE16;X27Y9/SPINE16/PCLKR1;5;X3Y22/GT00;X3Y19/GT00/SPINE16;5;X2Y15/GB00;X3Y15/GBO0/GT00;5;X1Y15/CLK1;X1Y15/CLK1/GB00;5;X46Y16/F6;;5"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 7709 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "/home/prima/GR8GG/counter.v:3.11-3.14"
+          }
+        }
+      }
+    }
+  }
+}

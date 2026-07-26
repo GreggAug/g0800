@@ -1,0 +1,78 @@
+{
+	"nodes":[
+		{"id":"c9b4ccbd23eeeb85","type":"text","text":"Z","x":316,"y":200,"width":50,"height":60,"color":"1"},
+		{"id":"1cdb9b70481d64be","type":"text","text":"OF","x":520,"y":97,"width":80,"height":60,"color":"1"},
+		{"id":"84353381bd919a3c","type":"text","text":"Accumulator","x":-56,"y":-156,"width":157,"height":81},
+		{"id":"c38aafc4cbe7d9b3","type":"text","text":"bit 9 (carry)","x":177,"y":-140,"width":189,"height":50,"color":"5"},
+		{
+			"id":"c6308d4cd6eb9684",
+			"type":"text",
+			"text":"Memory Bus",
+			"styleAttributes":{},
+			"x":-166,
+			"y":-660,
+			"width":220,
+			"height":60
+		},
+		{"id":"9d66ceb70a19023b","type":"text","text":"DECODER","x":-130,"y":-540,"width":149,"height":71},
+		{"id":"36b53858777f1999","type":"text","text":"bits 8-0","x":-43,"y":107,"width":132,"height":50,"color":"5"},
+		{"id":"179008842722204d","type":"text","text":"ARR","x":-166,"y":-320,"width":82,"height":71,"color":"1"}
+	],
+	"edges":[
+		{"id":"24140fcf9698f1a2","toFloating":false,"fromNode":"84353381bd919a3c","fromSide":"right","toNode":"c38aafc4cbe7d9b3","toSide":"left"},
+		{
+			"id":"a12624679b16f950",
+			"fromFloating":false,
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromNode":"c38aafc4cbe7d9b3",
+			"fromSide":"right",
+			"toNode":"1cdb9b70481d64be",
+			"toSide":"left",
+			"label":"Saves to"
+		},
+		{
+			"id":"f4ffbc855983984d",
+			"fromFloating":false,
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromNode":"179008842722204d",
+			"fromSide":"right",
+			"toNode":"84353381bd919a3c",
+			"toSide":"top"
+		},
+		{"id":"9fe47e396af76d12","fromNode":"84353381bd919a3c","fromSide":"bottom","toNode":"36b53858777f1999","toSide":"top"},
+		{
+			"id":"134272823ef394e2",
+			"fromFloating":false,
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromNode":"36b53858777f1999",
+			"fromSide":"right",
+			"toNode":"c9b4ccbd23eeeb85",
+			"toSide":"left",
+			"label":"NOR all bits"
+		},
+		{
+			"id":"46f0b9a94dda1dd7",
+			"fromFloating":false,
+			"styleAttributes":{"pathfindingMethod":"square","path":"long-dashed"},
+			"toFloating":false,
+			"fromNode":"36b53858777f1999",
+			"fromSide":"bottom",
+			"toNode":"179008842722204d",
+			"toSide":"left",
+			"label":"If ADD or SUB were used"
+		},
+		{
+			"id":"89bef2a3c328007f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c6308d4cd6eb9684",
+			"fromSide":"bottom",
+			"toNode":"9d66ceb70a19023b",
+			"toSide":"top"
+		}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
