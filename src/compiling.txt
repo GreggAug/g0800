@@ -1,0 +1,16 @@
+To Generate Simulation:
+
+iverilog -o [OUTPUT_NAME].vvp [input1].vvp [input2].vvp
+
+Simulation execution:
+vvp [SIM_NAME].vvp
+
+
+
+To show circuit:
+# Gate level:
+yosys -p "read_verilog file.v; hierarchy -check; synth; show module_name"
+
+# Abstracted level
+yosys -p "read_verilog [file.v]; hierarchy -check; proc; opt; show"
+
